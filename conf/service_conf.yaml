@@ -23,7 +23,7 @@ redis:
   host: 'localhost:16379'
 user_default_llm:
   factory: 'OpenAI'
-  api_key: 'sk-proj-KZcuqhj50MqXHxWjTpFhT3BlbkFJJMQaOFTYCuSXOxxYLySw'
+  api_key: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
   base_url: ''
 oauth:
   github:
