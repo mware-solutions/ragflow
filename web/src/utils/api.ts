@@ -1,4 +1,4 @@
-let api_host = `http://localhost:9380/v1`;
+let api_host = `/v1`;
 
 export { api_host };
 

@@ -91,21 +91,33 @@ services:
       - redis_data:/data
     networks:
       - ragflow
-    ports:
-      - ${REDIS_PORT}:6379
     restart: always
-
-
 
 volumes:
   esdata01:
     driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /opt/rag/data/es-data
   mysql_data:
     driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /opt/rag/data/mysql-data
   minio_data:
     driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /opt/rag/data/minio-data
   redis_data:
     driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /opt/rag/data/redis-data
 
 networks:
   ragflow:

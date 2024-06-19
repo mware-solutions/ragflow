@@ -18,4 +18,7 @@ ADD docker/entrypoint.sh ./entrypoint.sh
 ADD docker/.env ./
 RUN chmod +x ./entrypoint.sh
 
+ADD requirements.txt ./
+RUN pip install -r requirements.txt
+
 ENTRYPOINT ["./entrypoint.sh"]
