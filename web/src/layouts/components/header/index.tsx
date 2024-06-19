@@ -26,7 +26,7 @@ const RagHeader = () => {
     () => [
       { path: '/knowledge', name: t('knowledgeBase'), icon: KnowledgeBaseIcon },
       { path: '/chat', name: t('chat'), icon: StarIon },
-      { path: '/file', name: t('fileManager'), icon: FileIcon },
+      // { path: '/file', name: t('fileManager'), icon: FileIcon },
     ],
     [t],
   );
@@ -57,8 +57,9 @@ const RagHeader = () => {
       }}
     >
       <Space size={12} onClick={handleLogoClick} className={styles.logoWrapper}>
-        <img src="/logo.svg" alt="" className={styles.appIcon} />
-        <span className={styles.appName}>{appConf.appName}</span>
+        <img src="/logo_cc.jpg" alt="" className={styles.appIcon} />
+        <img src="/surogate_logo_black.svg" alt="" className={styles.appIcon} />
+        <span className={styles.appName}>Surogate (Tech preview)</span>
       </Space>
       <Space size={[0, 8]} wrap>
         <Radio.Group

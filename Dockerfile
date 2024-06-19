@@ -13,7 +13,6 @@ ADD ./rag ./rag
 ADD ./graph ./graph
 
 ENV PYTHONPATH=/ragflow/
-ENV HF_ENDPOINT=https://hf-mirror.com
 
 ADD docker/entrypoint.sh ./entrypoint.sh
 ADD docker/.env ./

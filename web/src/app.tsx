@@ -56,7 +56,7 @@ const RootProvider = ({ children }: React.PropsWithChildren) => {
       <ConfigProvider
         theme={{
           token: {
-            fontFamily: 'Inter',
+            fontFamily: 'Diatype',
           },
         }}
         locale={locale}

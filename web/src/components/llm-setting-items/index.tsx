@@ -29,11 +29,12 @@ const LlmSettingItems = ({ prefix, handleParametersChange }: IProps) => {
         label={t('model')}
         name="llm_id"
         tooltip={t('modelTip')}
+        style={{display: 'none'}}
         rules={[{ required: true, message: t('modelMessage') }]}
       >
         <Select options={modelOptions[LlmModelType.Chat]} showSearch />
       </Form.Item>
-      <Divider></Divider>
+      {/*<Divider></Divider>*/}
       <Form.Item
         label={t('freedom')}
         name="parameters"

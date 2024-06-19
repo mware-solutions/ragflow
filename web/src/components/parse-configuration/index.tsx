@@ -37,6 +37,7 @@ const ParseConfiguration = () => {
         name={['parser_config', 'raptor', 'use_raptor']}
         label={t('useRaptor')}
         initialValue={false}
+        style={{display: 'none'}}
         valuePropName="checked"
         tooltip={t('useRaptorTip')}
       >
